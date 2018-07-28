@@ -77,16 +77,7 @@ function hikaru_customize_register( $wp_customize ) {
         'settings'=>'hikaru_sticky_menu',
         'type'        => 'ios',// light, ios, flat
 	) ) );
-	
-	/* $wp_customize->add_control('hikaru_sticky_menu' , array(
-        'label' => esc_html__('Sticky navigation menu','hikaru'),
-        'section' => 'hikaru_options',
-        'settings'=>'hikaru_sticky_menu',
-        'description' => esc_html__('Set Sticky navigation menu','hikaru'),
-        'type' => 'checkbox'
-        
-	));
- */
+		
 	$wp_customize->add_control( new Separator_Custom_control( $wp_customize, 'hikaru_separator_2', array(
 		'section' 		=> 'hikaru_options',
 		'settings'      => 'hikaru_sticky_menu',		
@@ -106,15 +97,7 @@ function hikaru_customize_register( $wp_customize ) {
         'type'        => 'ios',// light, ios, flat
 	) ) );
 
-	/* $wp_customize->add_control('hikaru_related_posts' , array(
-        'label' => esc_html__('Show/Hide Related Posts','hikaru'),
-        'section' => 'hikaru_options',
-        'setting'=>'hikaru_related_posts',
-        'description' => esc_html__('Show/Hide Related Posts on single post','hikaru'),
-        'type' => 'checkbox'
-        
-	)); */
-
+	
 	$wp_customize->add_control( new Separator_Custom_control( $wp_customize, 'hikaru_separator_3', array(
 		'section' 		=> 'hikaru_options',
 		'settings'      => 'hikaru_related_posts',		
@@ -134,15 +117,7 @@ function hikaru_customize_register( $wp_customize ) {
         'type'        => 'ios',// light, ios, flat
 	) ) );
 
-	/* $wp_customize->add_control('hikaru_breadcrumbs' , array(
-        'label' => esc_html__('Show/Hide breadcrumbs','hikaru'),
-        'section' => 'hikaru_options',
-        'setting'=>'hikaru_breadcrumbs',
-        'description' => esc_html__('Show/Hide breadcrumbs ','hikaru'),
-        'type' => 'checkbox'
-        
-	)); */
-
+	
 	$wp_customize->add_control( new Separator_Custom_control( $wp_customize, 'hikaru_separator_4', array(
 		'section' 		=> 'hikaru_options',
 		'settings'      => 'hikaru_breadcrumbs',		
@@ -162,15 +137,7 @@ function hikaru_customize_register( $wp_customize ) {
         'type'        => 'ios',// light, ios, flat
 	) ) );
 
-	/* $wp_customize->add_control('hikaru_show_menu_social' , array(
-        'label' => esc_html__('Network menu social Show/hidde','hikaru'),
-        'section' => 'hikaru_options',
-        'setting'=>'hikaru_show_menu_social',
-        'description' => esc_html__('show or hide Network menu social, For show icons leave url with social network','hikaru'),
-        'type' => 'checkbox'
-        
-	)); */
-
+	
 	/* Social networks menu*/
 
 	/* Pinterest*/

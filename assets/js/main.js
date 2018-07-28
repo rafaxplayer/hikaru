@@ -7,10 +7,19 @@
           $('.menu-wrapper,.sticky-navigation').css({ 'top': $adminBar.height() + 'px' });
       }
 
-      $('.hamburger').click(function() {
+      // show hide menu
+      $('.hamburger').click(function(e) {
           $('.menu-wrapper').toggleClass('visible');
           $(this).toggleClass('is-active');
+          e.stopPropagation();
+      });
 
+      // hide menu when user click outside area
+      $(document).on('click', function(e) {
+          if ($(e.target).closest(".menu-wrapper").length === 0) {
+              $('.menu-wrapper').removeClass('visible');
+              $('.hamburger').removeClass('is-active');
+          }
       });
 
       /* hide sticky navigation on tablets or more little sizes*/
@@ -29,7 +38,7 @@
           showButtonUp($container);
 
       });
-
+      // button up scroll
       $('.button-up').on('click', function() {
           $('html,body').animate({ scrollTop: 0 }, 500);
       });

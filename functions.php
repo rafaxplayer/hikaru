@@ -143,9 +143,10 @@ add_action( 'widgets_init', 'hikaru_widgets_init' );
  * Enqueue scripts and styles.
  */
 function hikaru_scripts() {
+
 	wp_enqueue_style( 'google-fonts',  "https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Raleway:100,200,300i,400,500,600");
-	
-	wp_enqueue_style( 'font-awesome', "https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome/all.css');
 	
 	wp_enqueue_style( 'hikaru-style', get_stylesheet_uri() );
 

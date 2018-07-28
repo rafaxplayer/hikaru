@@ -112,3 +112,12 @@ input[type=checkbox].tgl-flat:checked + .tgl-btn:after {
   left: 50%;
   background: #7FC6A6;
 }
+.custom-toggle-button >div{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.custom-toggle-button .customize-control-title{
+  flex: 2 0 0; vertical-align: middle;
+}

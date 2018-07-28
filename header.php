@@ -27,7 +27,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; }
 <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
 	<div class="search-button"></div>
 	<div class="search-entry">
-		<span class="screen-reader-text">Search for:</span>
+		<span class="screen-reader-text"><?php esc_html_e( 'Search for:', 'hikaru' ); ?></span>
 		<input type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:" autocomplete="off"/> 
 	</div> 
 </form>

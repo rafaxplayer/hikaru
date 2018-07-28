@@ -4,7 +4,7 @@ Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, editor-style, sticky-post, theme-options, blog, news
 Requires at least: 4.5
 Tested up to: 4.9
-Version: 1.1.1
+Version: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,8 +27,8 @@ hikaru includes support for Infinite Scroll in Jetpack.
 
 == Copyright ==
 
-The Noa WordPress Theme incorporates code from TwentySeventeen WordPress Theme, Copyright 2016 WordPress
-TwentySeventeen WordPress Theme is distributed under the terms of the GNU GPL
+The Hikaru WordPress Theme incorporates code from TwentySeventeen WordPress Theme, Copyright 2016 WordPress
+Hikaru WordPress Theme is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -41,6 +41,15 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.1.5 - Jul 21 2018 =
+* Minor bug fixes
+
+= 1.1.4 - Jul 19 2018 =
+* Minor bug fixes
+
+= 1.1.3 - Jul 15 2018 =
+* Minor bug fixes
 
 = 1.1.1 - Jun 5 2018 =
 * Minor bug fixes
@@ -58,3 +67,7 @@ GNU General Public License for more details.
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
 * hamburger.css https://github.com/jonsuh/hamburgers, (C) 2016 Jonathan Suh <hello@jonsuh.com> (jonsuh.com), [MIT](https://opensource.org/licenses/MIT)
 * FontAwesome License: SIL Open Font License, 1.1 Source: https://fontawesome.io
+* Cinzel License: SIL Open Font License, 1.1 Source: https://fonts.google.com/specimen/Cincel
+* Images in screenshot.png by Donald Tong, supplied through Pexels
+  License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
+  Source: https://www.pexels.com/photo/bamboo-trees-bridge-city-daylight-115603/
