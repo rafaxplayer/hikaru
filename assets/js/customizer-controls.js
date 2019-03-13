@@ -8,6 +8,7 @@
 
 
         function social_links_check() {
+
             // array controls ids
             var $control_ids = [
                 'hikaru_pinterest_url_control',
@@ -19,23 +20,25 @@
 
             ];
 
+            console.log(wp.customize.instance('hikaru_show_menu_social').get());
+
             if (wp.customize.instance('hikaru_show_menu_social').get()) {
                 $.each($control_ids, function(id, value) {
                     $('#customize-control-' + value).fadeIn();
-                })
+                });
             } else {
                 $.each($control_ids, function(id, value) {
                     $('#customize-control-' + value).fadeOut();
-                })
+                });
             }
         }
 
 
-
         // on change values....
-        wp.customize.control('hikaru_show_menu_social', function(control) {
+        wp.customize.control('hikaru_show_menu_social_control', function(control) {
             control.setting.bind(function(value) {
                 // check state
+                console.log('cahnge');
                 social_links_check();
             });
 

@@ -44,6 +44,7 @@ if ( ! function_exists( 'hikaru_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		add_image_size( 'post', 1400, 9999);
+		add_image_size( 'post-min', 770, 9999);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -164,7 +165,7 @@ add_action( 'wp_enqueue_scripts', 'hikaru_scripts' );
  */
 
 function hikaru_excerpt_length(){
-	return 40;
+	return 15;
 }
 add_filter( 'excerpt_length', 'hikaru_excerpt_length' );
 /**

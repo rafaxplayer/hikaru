@@ -137,11 +137,7 @@ if ( ! function_exists( 'hikaru_post_thumbnail' ) ) :
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 			<?php
 			if(has_post_thumbnail()):
-				the_post_thumbnail( 'post', array(
-					'alt' => the_title_attribute( array(
-						'echo' => false,
-					) ),
-				) );
+				the_post_thumbnail( 'post-min');
 			else:
 				
 			$image_url = get_theme_mod('hikaru_fallback_image',"") != "" ? get_theme_mod('hikaru_fallback_image') : get_template_directory_uri().'/assets/images/placeholder.jpg';

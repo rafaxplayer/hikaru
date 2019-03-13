@@ -21,7 +21,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; }
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php get_theme_mod('hikaru_sticky_bar', false) ? body_class("stiky-bar") : body_class(); ?>>
 <div class="menu-wrapper">
 
 <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
@@ -54,11 +54,11 @@ if ( !defined( 'ABSPATH' ) ) { exit; }
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hikaru' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header ">
 		
 	<?php
 
-		if ( has_nav_menu( 'menu-main' ) && get_theme_mod( 'hikaru_sticky_menu',false )) :?>
+		/* if ( has_nav_menu( 'menu-main' )) :?>
 			<nav class="sticky-navigation">
 				<?php wp_nav_menu( array(
 					'theme_location' => 'menu-main',
@@ -67,7 +67,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; }
 				<?php get_search_form();?>
 			</nav><!-- #main menu -->
 
-		<?php endif; 
+		<?php endif;  */
 		
 		/* social menu */
 		do_action( 'hikaru_action_social_menu')?>
@@ -91,7 +91,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; }
 				<div class="hamburger-inner"></div>
 			</div>
 		</div>
-		
+		<span class="separator">#</span>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

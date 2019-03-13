@@ -14,26 +14,27 @@ if( !function_exists('hikaru_social_menu') ):
         if(get_theme_mod('hikaru_show_menu_social',false)):?>
 			<div class="menu-social">
 				<?php if(get_theme_mod('hikaru_facebook_url')):?>
-					<a href="<?php esc_url(get_theme_mod('hikaru_facebook_url')); ?>"><i class="fab fa-facebook-square"></i></a>
+					<a href="<?php echo esc_url(get_theme_mod('hikaru_facebook_url')); ?>" target="_blank">Facebook</a>
 				<?php endif;?>
 				<?php if(get_theme_mod('hikaru_twitter_url')):?>
-					<a href="<?php esc_url(get_theme_mod('hikaru_twitter_url')); ?>"><i class="fab fa-twitter-square"></i></a>
+					<a href="<?php echo esc_url(get_theme_mod('hikaru_twitter_url')); ?>" target="_blank">Twitter</i></a>
 				<?php endif;?>
 				<?php if(get_theme_mod('hikaru_instagram_url')):?>
-					<a href="<?php esc_url(get_theme_mod('hikaru_instagram_url')); ?>" ><i class="fab fa-instagram"></i></a>
+					<a href="<?php echo esc_url(get_theme_mod('hikaru_instagram_url')); ?>" target="_blank">Instagram</a>
 				<?php endif;?>
 				<?php if(get_theme_mod('hikaru_pinterest_url')):?>
-					<a href="<?php esc_url(get_theme_mod('hikaru_pinterest_url')); ?>"><i class="fab fa-pinterest-square"></i></a>
+					<a href="<?php echo esc_url(get_theme_mod('hikaru_pinterest_url')); ?>" target="_blank">Pinterest</a>
 				<?php endif;?>
 				<?php if(get_theme_mod('hikaru_linkedin_url')):?>
-					<a href="<?php esc_url(get_theme_mod('hikaru_linkedin_url')); ?>"><i class="fab fa-linkedin"></i></a>
-				<?php endif;?>
-				<?php if(get_theme_mod('hikaru_whatsapp_number')):?>
-					<a href="<?php esc_url(get_theme_mod('hikaru_whatsapp_number')); ?>"><i class="fab fa-whatsapp"></i></a>
+					<a href="<?php echo esc_url(get_theme_mod('hikaru_linkedin_url')); ?>" target="_blank">Linkedin</a>
 				<?php endif;?>
 				<?php if(get_theme_mod('hikaru_google+_url')):?>
-					<a href="<?php esc_url(get_theme_mod('hikaru_google+_url')); ?>"><i class="fab fa-google-plus-square"></i></a>
+					<a href="<?php echo esc_url(get_theme_mod('hikaru_google+_url')); ?>" target="_blank">Google+</i></a>
 				<?php endif;?>
+				<?php if(get_theme_mod('hikaru_whatsapp_number')):?>
+					<a href="tel:<?php echo esc_html(get_theme_mod('hikaru_whatsapp_number')); ?>" target="_blank">Whatsapp</a>
+				<?php endif;?>
+				
 			</div><!-- #social menu -->
 		<?php endif;
     }

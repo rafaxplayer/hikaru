@@ -66,21 +66,21 @@ function hikaru_customize_register( $wp_customize ) {
 	) ) );
 
 	// sticky main menu
-	$wp_customize->add_setting( 'hikaru_sticky_menu', array(
+	$wp_customize->add_setting( 'hikaru_sticky_bar', array(
 		'sanitize_callback' => 'hikaru_sanitize_checkbox',
 		'default'       => false,
 	) );
 
-	$wp_customize->add_control( new Customizer_Toggle_Control( $wp_customize, 'hikaru_sticky_menu_control', array(
-		'label' => esc_html__('Sticky navigation menu','hikaru'),
+	$wp_customize->add_control( new Customizer_Toggle_Control( $wp_customize, 'hikaru_sticky_bar_control', array(
+		'label' => esc_html__('Sticky Top Bar','hikaru'),
         'section' => 'hikaru_options',
-        'settings'=>'hikaru_sticky_menu',
+        'settings'=> 'hikaru_sticky_bar',
         'type'        => 'ios',// light, ios, flat
 	) ) );
 		
 	$wp_customize->add_control( new Separator_Custom_control( $wp_customize, 'hikaru_separator_2', array(
 		'section' 		=> 'hikaru_options',
-		'settings'      => 'hikaru_sticky_menu',		
+		'settings'      => 'hikaru_sticky_bar',		
 	) ) );
 
 	// Related Posts
