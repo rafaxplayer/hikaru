@@ -4,7 +4,7 @@ Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, editor-style, sticky-post, theme-options, blog, news
 Requires at least: 4.5
 Tested up to: 4.9
-Version: 1.1.5
+Version: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,13 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 == Changelog ==
+
+= 1.1.7 - May 21 2019 =
+* Minor bug fixes
+
+= 1.1.6 - Mar 13 2019 =
+* Minor bug fixes
+* Desing Changes
 
 = 1.1.5 - Jul 21 2018 =
 * Minor bug fixes

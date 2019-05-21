@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying author info.
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -27,8 +27,8 @@ get_header();
     <div class="author-avatar"><?php echo get_avatar($curauth->ID) ?></div>
 
     <h2 class="entry-title"><?php echo sprintf(esc_html('About: %s','hikaru'), esc_html($curauth->nickname)); ?></h2>
-
-
+    
+    
     <dl>
         <dt>Website</dt>
         <dd><a href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a></dd>

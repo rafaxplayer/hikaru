@@ -55,22 +55,8 @@ if ( !defined( 'ABSPATH' ) ) { exit; }
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hikaru' ); ?></a>
 
 	<header id="masthead" class="site-header ">
-		
-	<?php
-
-		/* if ( has_nav_menu( 'menu-main' )) :?>
-			<nav class="sticky-navigation">
-				<?php wp_nav_menu( array(
-					'theme_location' => 'menu-main',
-					'menu_id'        => 'primary-menu',
-				) );?>
-				<?php get_search_form();?>
-			</nav><!-- #main menu -->
-
-		<?php endif;  */
-		
-		/* social menu */
-		do_action( 'hikaru_action_social_menu')?>
+			
+		<?php do_action( 'hikaru_action_social_menu'); ?>
 		
 		<div class="site-branding">
 			<?php the_custom_logo(); ?>
