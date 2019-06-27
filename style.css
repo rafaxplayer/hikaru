@@ -4,7 +4,7 @@ Theme URI:
 Author: Juan Rafael simarro
 Author URI: https://juanrafaelsimarro.com/
 Description: Clean theme and with few options, especially for news blog or staff where we want a white and simple interface without much detail.
-Version: 1.1.7
+Version: 1.1.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: hikaru
@@ -1257,7 +1257,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     @media screen and (min-width:37.5rem) {
         .site-main {
             max-width: 79.6875rem;
-            margin: 7rem 2rem;
+            margin: 7rem auto;
         }
     }
     /*--------------------------------------------------------------

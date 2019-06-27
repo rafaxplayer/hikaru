@@ -149,7 +149,7 @@ function hikaru_scripts() {
 
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome/all.css');
 	
-	wp_enqueue_style( 'hikaru-style', get_stylesheet_uri() ,array() ,'1.1.7');
+	wp_enqueue_style( 'hikaru-style', get_stylesheet_uri());
 
 	wp_enqueue_script( 'hikaru-main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '201513455', true );
 	
