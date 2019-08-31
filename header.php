@@ -22,6 +22,12 @@ if ( !defined( 'ABSPATH' ) ) { exit; }
 </head>
 
 <body <?php get_theme_mod('hikaru_sticky_bar', false) ? body_class("stiky-bar") : body_class(); ?>>
+<?php 
+if ( function_exists( 'wp_body_open' ) ) {
+    wp_body_open();
+} else {
+    do_action( 'wp_body_open' );
+}?>
 <div class="menu-wrapper">
 
 <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
